@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Trỏ tên miền thành công tới Singapore Hongkong Datacenter</title>
+  <style type="text/css">
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      color: #000000;
+      background: #E8E8E8;
+    }
+
+    .container {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 15px;
+    }
+
+    .container-inner {
+      background: #FFFFFF;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .header {
+      width: 100%;
+      height: 165px;
+      background: #F3F3F3;
+      border-radius: 8px 8px 0 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .error-description {
+      padding: 35px 42px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #232323;
+    }
+
+    .error-description .error-title {
+      line-height: 17px;
+      margin-bottom: 4px;
+    }
+
+    .error-description .error-code {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 39px;
+      margin-bottom: 4px;
+    }
+
+    .error-description .hostname {
+      line-height: 20px;
+      margin-bottom: 2px;
+    }
+
+    .error-description .date {
+      line-height: 17px;
+      color: #727272;
+    }
+
+    .main {
+      padding: 42px;
+    }
+
+    .troubleshooting {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .troubleshooting .title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 17px;
+    }
+
+    .troubleshooting .content {
+      flex-basis: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-width: 0;
+    }
+
+    .troubleshooting .content .description {
+      line-height: 18px;
+      margin-bottom: 35px;
+    }
+
+    .troubleshooting .parentheses-text {
+      color: #727272;
+    }
+
+    .info-container .info {
+      line-height: 15px;
+    }
+
+    .info-container .info:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    .info-container .info .value {
+      color: #285AE6;
+    }
+
+    .powered-by {
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .powered-by .copyrights {
+      color: #000000;
+      text-decoration: none;
+      font-size: 0;
+    }
+
+    .powered-by .copyrights::before {
+      display: inline-block;
+      content: url("data:image/svg+xml,%0A%3Csvg width='50px' height='30px' version='1.0' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 782.000000 782.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,782.000000) scale(0.100000,-0.100000)' fill='%23000' fill-opacity='0.1' stroke='none'%3E%3Cpath d='M3815 7804 c-55 -9 -139 -36 -187 -60 -65 -33 -175 -139 -217 -209%0A-70 -116 -120 -314 -108 -428 3 -29 123 -645 267 -1369 l263 -1318 78 0 c44 0%0A79 4 79 9 0 4 120 609 266 1342 l266 1334 -11 95 c-34 281 -188 499 -409 576%0A-71 24 -217 39 -287 28z'%3E%3C/path%3E%3Cpath d='M2525 7544 c-217 -46 -399 -211 -448 -409 -36 -144 -30 -279 20 -428%0A25 -75 99 -190 787 -1219 l759 -1136 51 23 c28 12 60 26 72 31 20 9 14 38%0A-247 1347 -297 1488 -273 1395 -390 1542 -74 93 -151 156 -254 206 -120 58%0A-220 70 -350 43z'%3E%3C/path%3E%3Cpath d='M5065 7553 c-146 -31 -293 -132 -391 -269 -99 -139 -84 -77 -375%0A-1534 -262 -1314 -266 -1335 -245 -1344 12 -5 44 -19 72 -31 l52 -23 755 1133%0Ac416 622 765 1155 777 1184 32 82 53 224 47 317 -12 175 -62 291 -171 400 -79%0A79 -175 132 -286 158 -60 15 -188 19 -235 9z'%3E%3C/path%3E%3Cpath d='M6110 6825 c-112 -31 -234 -100 -319 -183 -73 -70 -148 -178 -827%0A-1196 l-747 -1118 56 -55 55 -56 1118 748 c616 411 1141 768 1167 794 69 66%0A136 171 176 276 30 79 35 104 39 207 4 98 1 127 -16 185 -49 161 -191 312%0A-355 381 -52 21 -81 26 -177 29 -80 2 -132 -2 -170 -12z'%3E%3C/path%3E%3Cpath d='M1388 6811 c-159 -52 -310 -194 -374 -351 -35 -86 -45 -243 -20 -340%0A29 -118 98 -240 184 -329 70 -73 178 -148 1196 -827 l1118 -747 55 56 56 55%0A-748 1118 c-411 616 -768 1141 -794 1167 -65 68 -179 141 -280 178 -76 28%0A-100 32 -211 36 -102 2 -135 0 -182 -16z'%3E%3C/path%3E%3Cpath d='M6854 5760 c-34 -5 -99 -21 -146 -37 -77 -26 -183 -94 -1220 -787%0Al-1136 -759 23 -51 c12 -28 26 -60 31 -72 9 -20 38 -14 1347 247 1488 297%0A1395 273 1542 390 142 113 235 263 257 417 38 276 -153 568 -417 636 -77 20%0A-204 27 -281 16z'%3E%3C/path%3E%3Cpath d='M775 5753 c-253 -35 -442 -208 -501 -458 -22 -93 -15 -228 16 -310%0A64 -170 223 -326 407 -400 36 -15 564 -124 1384 -287 l1327 -264 26 65 c15 37%0A27 69 29 73 4 12 -2246 1509 -2305 1534 -100 42 -270 62 -383 47z'%3E%3C/path%3E%3Cpath d='M571 4505 c-166 -31 -321 -112 -414 -215 -103 -115 -140 -214 -141%0A-380 0 -123 14 -191 60 -282 33 -65 139 -175 209 -217 116 -70 314 -120 428%0A-108 29 3 645 123 1370 267 l1317 263 0 77 0 77 -1322 263 c-728 145 -1348%0A265 -1378 266 -30 2 -89 -3 -129 -11z'%3E%3C/path%3E%3Cpath d='M6740 4449 c-190 -38 -789 -157 -1332 -265 l-988 -196 0 -79 c0 -44%0A3 -79 8 -79 4 0 608 -120 1342 -266 l1335 -266 95 11 c283 34 497 187 577 412%0A23 63 27 91 27 189 0 123 -14 191 -60 282 -33 64 -139 175 -208 217 -107 64%0A-273 111 -396 110 -30 0 -210 -31 -400 -70z'%3E%3C/path%3E%3Cpath d='M3814 4365 c-239 -52 -404 -290 -364 -526 43 -252 285 -430 531 -389%0A252 43 430 285 389 531 -32 191 -179 344 -369 385 -80 17 -107 16 -187 -1z'%3E%3C/path%3E%3Cpath d='M2068 3519 c-1487 -296 -1396 -273 -1541 -388 -143 -114 -237 -266%0A-258 -419 -10 -70 -10 -95 5 -170 64 -329 337 -525 674 -483 192 24 135 -9%0A1384 825 l1136 759 -23 51 c-12 28 -26 60 -31 72 -9 20 -38 14 -1346 -247z'%3E%3C/path%3E%3Cpath d='M4386 3721 c-15 -37 -27 -69 -29 -73 -4 -12 2246 -1509 2305 -1534%0A131 -55 324 -66 469 -29 206 54 363 220 415 440 22 93 15 228 -16 310 -64 170%0A-223 326 -407 400 -36 15 -564 124 -1384 287 l-1327 264 -26 -65z'%3E%3C/path%3E%3Cpath d='M2366 2850 c-616 -412 -1139 -769 -1163 -792 -66 -64 -133 -171 -172%0A-273 -30 -79 -35 -104 -39 -207 -4 -98 -1 -127 16 -185 49 -161 191 -313 355%0A-381 82 -33 241 -42 337 -18 118 29 240 98 329 184 73 70 148 178 827 1195%0Al746 1119 -53 54 c-29 30 -56 54 -59 54 -3 -1 -509 -338 -1124 -750z'%3E%3C/path%3E%3Cpath d='M4271 3546 l-53 -54 747 -1119 c411 -615 768 -1140 794 -1166 66 -69%0A171 -136 276 -176 79 -30 104 -35 207 -39 98 -4 127 -1 185 16 161 49 313 191%0A381 355 20 49 26 85 30 167 5 129 -10 198 -73 326 -89 181 -43 147 -1309 993%0A-618 413 -1126 751 -1128 751 -2 0 -28 -24 -57 -54z'%3E%3C/path%3E%3Cpath d='M2887 2336 c-416 -623 -765 -1156 -777 -1185 -51 -130 -61 -320 -25%0A-462 54 -206 220 -363 440 -415 93 -22 228 -15 310 16 170 64 326 223 400 407%0A15 36 124 564 288 1385 l263 1328 -35 11 c-20 7 -52 20 -72 30 l-36 18 -756%0A-1133z'%3E%3C/path%3E%3Cpath d='M4135 3449 c-22 -10 -54 -24 -71 -31 l-30 -13 267 -1338 c296 -1486%0A273 -1395 388 -1540 114 -143 266 -237 419 -258 110 -16 223 5 342 64 274 135%0A382 437 275 774 -24 76 -82 167 -782 1215 -416 623 -759 1136 -762 1139 -3 4%0A-24 -2 -46 -12z'%3E%3C/path%3E%3Cpath d='M3830 3393 c0 -5 -120 -609 -266 -1343 l-266 -1335 11 -95 c34 -283%0A187 -497 412 -577 63 -23 91 -27 189 -27 123 0 191 14 282 60 65 33 175 139%0A217 209 70 116 120 314 108 428 -3 29 -123 645 -267 1370 l-263 1317 -78 0%0Ac-44 0 -79 -3 -79 -7z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E")
+    }
+
+    .powered-by .text {
+      font-weight: 300;
+      font-size: 11px;
+      font-style: italic;
+      line-height: 15px;
+      margin-right: 10px;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        width: 817px;
+        max-width: 100%;
+        margin: 15vh auto;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .container {
+        width: 507px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        padding: 0;
+      }
+
+      .error-description .error-code {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="container-inner">
+      <div class="header">
+        <div class="error-description">
+          <div class="error-title">Hạ tầng mạng Singapore Hongkong Datacenter</div>
+          <div class="error-code">18.163.110.249</div>
+          <div class="hostname">s3.thaoam.net</div>
+          <div class="date">cPanel Singapore Hongkong Datacenter</div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="troubleshooting">
+          <div class="content">
+            <div class="title">Trỏ tên miền thành công?</div>
+            <div class="description">Trong bảng quản trị tên miền của bạn (bất kì nhà cung cấp nào).<br>
+
+                Hãy tạo 2 thông số cơ bản sau đây:<br>
+                
+                Tạo A Record <strong>@</strong> và trỏ về địa chỉ IP: <strong>18.163.110.249</strong><br>
+                Tạo CNAME Record <strong>www</strong> và trỏ về địa chỉ tên miền của bạn: tenmiencuaban.com<br>
+                Lưu lại, và chờ một chút để cập nhật và đồng bộ.</div>
+            <div class="info-container">
+              <div class="info">
+                <span class="label">Nameserver 1:</span>
+                <span class="value"> ns1.tiep.ga</span>
+                <span class="parentheses-text"> (IP 128.199.82.74)</span>
+              </div>
+              <div class="info">
+                <span class="label">Nameserver 2:</span>
+                <span class="value">ns2.tiep.ga</span>
+                <span class="parentheses-text"> (IP )</span>
+              </div>
+              <div class="info">
+                <span class="label">Nameserver 3:</span>
+                <span class="value">ns3.tiep.ga</span>
+                <span class="parentheses-text"> (IP 18.163.110.249)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="powered-by">
+      <span class="text">Powered by</span>
+      <a href="https://thaoam.net" target="_blank" class="copyrights">thaoam.net</a>
+    </div>
+  </div>
+  <div class="ads"><center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8440757103947288"
+    crossorigin="anonymous"></script>
+<!-- Homepage Advertisement -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-8440757103947288"
+    data-ad-slot="7991189984"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div>
+</body>
+</html>
